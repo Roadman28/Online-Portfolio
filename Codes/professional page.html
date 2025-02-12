@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property='og:title' content='Shahidi Burke | Data Portfolio | professional' />
+    <title>Shahidi Burke | Data Analyst | professional </title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #181818;
+            color: #e5e5e5;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1f1f1f, #2d2d2d);
+            color: #e5e5e5;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 48px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        header p {
+            font-size: 16px;
+            margin-top: 5px;
+            color: #b0b0b0;
+        }
+
+        nav {
+            background: #222222;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        nav a {
+            color: #e5e5e5;
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 18px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00bcd4;
+        }
+
+        main {
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        section {
+            background: #2a2a2a;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .section-icon {
+            width: 50px; 
+            height: 50px; 
+            margin-right: 10px; /* Space between icon and title */
+            vertical-align: middle;
+        }
+
+        .experience-container, .education-container, .references-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .experience-card, .reference-card, .education-card {
+            display: flex;
+            align-items: center;
+            background: #333;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+            flex-wrap: wrap;
+        }
+
+        .experience-card:hover, .reference-card:hover, .education-card:hover {
+            transform: scale(1.05);
+        }
+
+        .experience-card img, .education-icon img {
+            width: 60px;
+            height: 60px;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .experience-description, .reference-description, .education-description {
+            flex: 1;
+        }
+
+        .education-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .skills-used {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.50px; 
+            padding: 0px 0; 
+        }
+
+        .skills-used img {
+            width: 20px;  
+            height: 20px;
+            transition: transform 0.3s ease;  
+        }
+
+        .skills-used img:hover {
+            transform: scale(1.1); 
+        }
+
+        footer {
+    background: #222222; 
+    color: #e5e5e5; 
+    text-align: center; 
+    padding: 20px; 
+    font-size: 16px;
+    box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.2); 
+    margin-top: 50px;
+}
+
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <h1>Shahidi Burke</h1>
+    <p>Data Analyst | Resumé</p>
+</header>
+
+<!-- Navigation Section -->
+<nav>
+    <a href="../Codes/index.html">Home</a>
+    <a href="../Codes/professional page.html">Resumé</a>
+    <a href="../Codes/personality page.html">Personality</a>
+    <a href="../Codes/personal development page.html">Personal Development</a>
+    <a href="../Codes/storyboard page.html">Storyboard</a>
+    <a href="../Codes/reference page.html">References</a>
+</nav>
+
+<main>
+
+<!-- Mission Section -->
+<section>
+    <h2><img src="../Assets/mission.png" alt="mission" class="section-icon"> Mission</h2>
+    <div class="experience-card">
+    <p>
+        A highly skilled business/data analyst with expertise in tools like Power BI, Python, Excel, Looker Studio, SQL, HTML, CSS and IBM Cognos.
+        Committed to transforming data into actionable insights that drive business decisions.
+        Experienced in coding, web development, and data visualization, with a focus on improving processes and optimizing performance.
+        Continuously expanding technical knowledge and aiming to lead data-driven initiatives that support organizational growth and efficiency.    </p>
+</section>
+
+<!-- Experience Section -->
+<section>
+    <h2>Experience</h2>
+    <div class="experience-container">
+        <!-- Seprod Limited -->
+        <div class="experience-card">
+            <img src="../Assets/seprod.png" alt="Seprod Limited Logo">
+            <div class="experience-description">
+                <p><strong>Seprod Limited</strong> - Business Analyst (March 2024 - Present)</p>
+                <p>Analyze supply chain efficiency, inventory turnover rates, and distribution costs to identify areas for optimization and cost reduction.</p>
+            </div>
+            <div class="skills-used">
+                <img src="../Assets/excel.png" alt="Excel" title="Excel">
+                <img src="../Assets/looker.png" alt="Looker" title="Looker">
+                <img src="../Assets/SQL.png" alt="SQL" title="SQL">
+                <img src="../Assets/python.png" alt="Python" title="Python">
+                <img src="../Assets/Cognos.png" alt="Cognos" title="Cognos">
+            </div>
+        </div>
+
+        <!-- Cable & Wireless Communications (Flow) -->
+        <div class="experience-card">
+            <img src="../Assets/flow.png" alt="Flow Logo">
+            <div class="experience-description">
+                <p><strong>Cable & Wireless Communications (Flow)</strong> - Business Intelligence Analyst (Feb 2022 - Mar 2024)</p>
+                <p>Analyzed large datasets, generated reports, and created dashboards to provide business insights across Caribbean and South American regions.</p>
+            </div>
+            <div class="skills-used">
+                <img src="../Assets/excel.png" alt="Excel" title="Excel">
+                <img src="../Assets/html.png" alt="HTML" title="HTML">
+                <img src="../Assets/tableau.png" alt="Tableau" title="Tableau">
+                <img src="../Assets/sql.png" alt="SQL" title="SQL">
+                <img src="../Assets/powerbi.png" alt="Power BI" title="Power BI">
+                <img src="../Assets/python.png" alt="Python" title="Python">
+                <img src="../Assets/css.png" alt="CSS" title="CSS">
+            </div>
+        </div>
+
+        <!-- Advantage Communications - Dialer Manager -->
+        <div class="experience-card">
+            <img src="../Assets/advantage.png" alt="Advantage Communications Logo">
+            <div class="experience-description">
+                <p><strong>Advantage Communications</strong> - Dialer Manager (Jun 2021 - Feb 2022)</p>
+                <p>Led and supervised a team of dialer analysts, ensuring efficient campaign execution through data-driven strategies.</p>
+            </div>
+            <div class="skills-used">
+                <img src="../Assets/excel.png" alt="Excel" title="Excel">
+                <img src="../Assets/powerbi.png" alt="Power BI" title="Power BI">
+            </div>
+        </div>
+
+        <!-- Advantage Communications - Workforce Analyst -->
+        <div class="experience-card">
+            <img src="../Assets/advantage.png" alt="Advantage Communications Logo">
+            <div class="experience-description">
+                <p><strong>Advantage Communications</strong> - Workforce Analyst (Mar 2020 - Jun 2021)</p>
+                <p>Developed and analyzed data-driven forecasts for staffing needs across departments. Prepared and delivered regular reports on workforce performance and improvement areas.</p>
+            </div>
+            <div class="skills-used">
+                <img src="../Assets/excel.png" alt="Excel" title="Excel">
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Education Section -->
+<section>
+    <h2>Education</h2>
+    <div class="education-container">
+        <div class="education-card">
+            <img src="../Assets/utech.png" alt="University of Technology Logo" class="education-icon">
+            <div class="education-description">
+                <p><strong>University of Technology</strong> - BSc in Computer Information Systems (Data Analytics) (2024-2027)</p>
+            </div>
+        </div>
+        <div class="education-card">
+            <img src="../Assets/kc.png" alt="Kingston College Logo" class="education-icon">
+            <div class="education-description">
+                <p><strong>Kingston College</strong> - 8 CSEC subjects including Mathematics & English (2009-2014)</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- References Section -->
+<section>
+    <h2>References</h2>
+    <div class="references-container">
+        <div class="reference-card">
+            <p>
+                <strong>Natalie Walker</strong> - Associate Manager, Flow<br>
+                <img src="../Assets/email.png" alt="Email" style="width: 16px; height: 16px; vertical-align: middle;">
+                Email: <a href="mailto:Natalie.Walker@cwc.com">Natalie.Walker@cwc.com</a> |
+                <img src="../Assets/whatsapp.png" alt="WhatsApp" style="width: 16px; height: 16px; vertical-align: middle;">
+                Phone: +1 876 350 1765
+            </p>
+        </div>
+        <div class="reference-card">
+            <p>
+                <strong>Nisa Chambers</strong> - Sales Manager, Advantage Communications<br>
+                <img src="../Assets/email.png" alt="Email" style="width: 16px; height: 16px; vertical-align: middle;">
+                Email: <a href="mailto:Nisa.chambers@advantagecall.com">Nisa.chambers@advantagecall.com</a> |
+                <img src="../Assets/whatsapp.png" alt="WhatsApp" style="width: 16px; height: 16px; vertical-align: middle;">
+                Phone: +1 876 281 9769
+            </p>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2025 Shahidi Burke. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

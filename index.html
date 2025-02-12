@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property='og:title' content='Shahidi Burke | Data Portfolio | Home' />
+    <title>Shahidi Burke | Data Analyst | Home </title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #181818; 
+            color: #e5e5e5; 
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1f1f1f, #2d2d2d);
+            color: #e5e5e5;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 48px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        header p {
+            font-size: 16px;
+            margin-top: 5px;
+            color: #b0b0b0; 
+        }
+
+        nav {
+            background: #222222; 
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        nav a {
+            color: #e5e5e5;
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 18px;
+            font-weight: 500;
+            position: relative;
+            padding: 0 0 4px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00bcd4; 
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #00bcd4;
+            left: 0;
+            bottom: -4px;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+
+        nav a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        main {
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        section {
+            background: #2a2a2a;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        section:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .about-container img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .about-container img:hover {
+            transform: scale(1.1);
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skill-card {
+            background: #333333;
+            border-radius: 10px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .skill-icon img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+
+        .skills-container button {
+            padding: 10px 15px;
+            margin: 8px;
+            background: #00bcd4;
+            color: #121212;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .skills-container button:hover {
+            background: #9c27b0; 
+            color: #ecf0f1;
+        }
+
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .contact-icons a img {
+            width: 45px;
+            height: 45px;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-icons a img:hover {
+            transform: scale(1.3);
+            filter: drop-shadow(0 0 6px #00bcd4);
+        }
+
+        .proficiency {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            margin-top: auto;
+        }
+
+        .circle {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #b3aaaa; /* Default (unfilled) color */
+            transition: background-color 0.3s ease;
+        }
+
+        .circle.filled {
+            background-color: #00bcd4; /* Neon blue for filled circles */
+        }
+
+        footer {
+    background: #222222; 
+    color: #e5e5e5; 
+    text-align: center; 
+    padding: 20px; 
+    font-size: 16px; 
+    box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.2); 
+    margin-top: 50px;
+}
+        
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Shahidi Burke</h1>
+        <p>Data Analyst | Home</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+    <a href="../Codes/index.html">Home</a>
+    <a href="../Codes/professional page.html">Resumé</a>
+    <a href="../Codes/personality page.html">Personality</a>
+    <a href="../Codes/personal development page.html">Personal Development</a>
+    <a href="../Codes/storyboard page.html">Storyboard</a>
+    <a href="../Codes/reference page.html">References</a>
+    </nav>
+
+    <main>
+        <!-- About Me Section -->
+        <section>
+            <h2>About Me</h2>
+            <div class="about-container">
+                <img src="../Assets/personal-photo.jpg" alt="My Picture" onclick="window.location.href='mailto:shahidirburke@students.utech.edu.jm?subject=2405836';">
+                Experienced Business/Data Analyst with a strong background in data manipulation, coding, and business strategy across various industries.
+                Skilled in analyzing large datasets, uncovering insights, and developing impactful reports using tools like Tableau, Power BI, IBM Cognos, Looker Studio, Python, HTML, and SQL.
+                Proven ability to lead teams, streamline operations, and drive data-informed decision-making, backed by solid project management expertise.
+            </div>
+        </section>
+
+    <!-- Skills Section -->
+<section class="skills-section">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="skill-card">
+            <div class="skill-icon">
+                <img src="../Assets/SQL.png" alt="SQL">
+            </div>
+            <h3>SQL</h3>
+            <p>Database management, query writing, and data analysis.</p>
+            <div class="proficiency">
+                <span class="circle filled"></span>
+                <span class="circle filled"></span>
+                <span class="circle filled"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <img src="../Assets/python.png" alt="Python">
+            </div>
+            <h3>Python</h3>
+            <p>Data manipulation and automation using Python scripts.</p>
+            <div class="proficiency">
+                <span class="circle filled"></span>
+                <span class="circle filled"></span>
+                <span class="circle filled"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <img src="../Assets/tableau.png" alt="Tableau">
+            </div>
+            <h3>Tableau</h3>
+            <p>Creating interactive dashboards for data visualization.</p>
+            <div class="proficiency">
+                <span class="circle filled"></span>
+                <span class="circle filled"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <img src="../Assets/powerbi.png" alt="Power BI">
+            </div>
+            <h3>Power BI</h3>
+            <p>Designing business intelligence reports and visualizations.</p>
+            <div class="proficiency">
+                <span class="circle filled"></span>
+                <span class="circle filled"></span>
+                <span class="circle filled"></span>
+                <span class="circle filled"></span>
+                <span class="circle"></span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <img src="../Assets/excel.png" alt="Excel">
+            </div>
+            <h3>Excel</h3>
+            <p>Turning raw data into actionable insights.</p>
+            <div class="proficiency">
+                <span class="circle filled"></span>
+                <span class="circle filled"></span>
+                <span class="circle filled"></span>
+                <span class="circle filled"></span>
+                <span class="circle"></span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <img src="../Assets/looker.png" alt="Looker Studio">
+            </div>
+            <h3>Looker Studio</h3>
+            <p>Building customized reports and dashboards for data insights.</p>
+            <div class="proficiency">
+                <span class="circle filled"></span>
+                <span class="circle filled"></span>
+                <span class="circle filled"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <img src="../Assets/Cognos.png" alt="IBM Cognos Analytics">
+            </div>
+            <h3>IBM Cognos Analytics</h3>
+            <p>Designing data-driven business reports and advanced analytics.</p>
+            <div class="proficiency">
+                <span class="circle filled"></span>
+                <span class="circle filled"></span>
+                <span class="circle filled"></span>
+                <span class="circle filled"></span>
+                <span class="circle"></span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <img src="../Assets/html.png" alt="HTML">
+            </div>
+            <h3>HTML</h3>
+            <p>Building structured web pages with semantic markup.</p>
+            <div class="proficiency">
+                <span class="circle filled"></span>
+                <span class="circle filled"></span>
+                <span class="circle filled"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <img src="../Assets/css.png" alt="CSS">
+            </div>
+            <h3>CSS</h3>
+            <p>Styling web pages with modern layout techniques like Flexbox and Grid.</p>
+            <div class="proficiency">
+                <span class="circle filled"></span>
+                <span class="circle filled"></span>
+                <span class="circle filled"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Contact Me Section -->
+<section>
+    <h2>Contact Me</h2>
+    <div class="contact-icons" style="display: flex; justify-content: flex-start; align-items: center; gap: 30px;">
+        <img src="../Assets/contact.gif" alt="Contact Me GIF" style="width: 70px; height: 50px; transition: transform 0.3s ease;">
+    </div>
+    <div class="contact-icons" style="display: flex; justify-content: center; align-items: center; gap: 30px; margin-top: -50px;">
+        <a href="mailto:shahidirburke@students.utech.edu.jm?subject=2405836" target="_blank">
+            <img src="../Assets/email.png" alt="Email">
+        </a>
+        <a href="https://jm.linkedin.com/in/shahidi-b-895bb01b7" target="_blank">
+            <img src="../Assets/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/Roadman28" target="_blank">
+            <img src="../Assets/github.png" alt="GitHub">
+        </a>
+        <a href="https://wa.me/18765737286" target="_blank">
+            <img src="../Assets/whatsapp.png" alt="Whatsapp">
+        </a>
+    </div>
+</section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Shahidi Burke. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

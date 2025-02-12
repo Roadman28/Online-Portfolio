@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property='og:title' content='Shahidi Burke | Data Portfolio | Personality' />
+    <title>Shahidi Burke | Data Analyst | Personality</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #181818;
+            color: #e5e5e5;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1f1f1f, #2d2d2d);
+            color: #e5e5e5;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 48px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        header p {
+            font-size: 16px;
+            margin-top: 5px;
+            color: #b0b0b0;
+        }
+
+        nav {
+            background: #222222;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        nav a {
+            color: #e5e5e5;
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 18px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00bcd4;
+        }
+
+        main {
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        /* Card layout for sections */
+        .section-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .section-card {
+    display: flex;
+    align-items: center;
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    flex-direction: row; 
+    gap: 20px; 
+    
+    }
+
+    .section-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    margin-right: 15px; /* Space between icon and text */
+    }
+
+        .section-card:hover {
+            transform: scale(1.05);
+        }
+
+        .section-card img {
+            width: 60px;
+            height: 60px;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .section-description {
+            flex: 1;
+        }
+
+        footer {
+            background: #222222;
+            color: #e5e5e5;
+            text-align: center;
+            padding: 20px;
+            font-size: 16px;
+            box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <h1>Shahidi Burke</h1>
+    <p>Data Analyst | Personality</p>
+</header>
+
+<!-- Navigation Section -->
+<nav>
+    <a href="../Codes/index.html">Home</a>
+    <a href="../Codes/professional page.html">Resumé</a>
+    <a href="../Codes/personality page.html">Personality</a>
+    <a href="../Codes/personal development page.html">Personal Development</a>
+    <a href="../Codes/storyboard page.html">Storyboard</a>
+    <a href="../Codes/reference page.html">References</a>
+</nav>
+
+<main>
+    <div class="section-container">
+
+        <!-- Best Attributes Section -->
+        <div class="section-card">
+            <img src="../Assets/personality.png" alt="personality" class="section-icon">
+            <div class="section-description">
+                <h2>Best Attributes</h2>
+                <p>
+                    I’m naturally structured and logical, which helps me stay organized and approach my studies efficiently. I don’t just aim to pass—I focus on improving and doing my best. 
+                    It also motivates me to collaborate with peers, share knowledge, and work towards achieving my academic goals.
+                </p>
+                <p>
+                    A key emotion that impacts my academic life is determination. When faced with challenges or difficult tasks, 
+                    I tap into my inner resolve to persevere. This mindset helps me stay on track and overcome obstacles, ensuring 
+                    my growth and success as a student.
+                </p>
+            </div>
+        </div>
+
+        <!-- Quote Section -->
+        <div class="section-card">
+            <img src="../Assets/undefeated.png" alt="undefeated" class="section-icon">
+            <div class="section-description">
+                <h2>Never be defeated</h2>
+                <p>
+                    One of my favorite quotes is "In life you will face many defeats but never let yourself be defeated." by Maya Angelou.
+                    I chose this quote because it resonates with me deeply.
+                    I didn’t grow up with heroes or role models; instead, I had people I didn’t want to be like.
+                    This quote speaks to the idea that regardless of the challenges, environment, or odds, the key is to never give up and always strive for the best.
+                    It reminds me that setbacks are part of the journey, but how we respond to them defines our success.
+                </p>
+            </div>
+        </div>
+
+   <!-- Personality Test Section -->
+<div class="section-card">
+    <img src="../Assets/trait.png" alt="trait" class="section-icon">
+    <div class="section-description">
+        <h2>Personality Test</h2>
+        <p>
+            I completed the <a href="https://www.16personalities.com/" target="_blank">16personalities</a> personality test, and here are my results:
+        </p>
+        <img src="../Assets/test.png" alt="Personality Test Results" style="width: auto; max-width: 600px; height: auto; margin-top: 20px; margin-bottom: 10px;">
+        <p>
+            After reviewing the results, the test feels mostly accurate. I prefer structure and planning (90% Judging), and I rely on logic over emotions (88% Thinking).
+            The 57% Introverted score makes sense—I’m not completely reserved but still lean that way.
+            While these tests aren’t perfect, they do give a decent idea of how I think and make decisions.
+        </p>
+    </div>
+</div>
+
+</main>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2025 Shahidi Burke. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
